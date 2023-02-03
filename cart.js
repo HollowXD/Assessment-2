@@ -34,8 +34,9 @@ const cart = [
 ]
 
 //CODE HERE
+function cartPrice(price)
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce(cartPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,7 +55,9 @@ const cart = [
 */
 
 //CODE HERE
-
+function calcFinalPrice(cartTotal, couponValuem tax) {
+    cartTotal * tax
+}
 
 
 //////////////////PROBLEM 3////////////////////
