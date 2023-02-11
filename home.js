@@ -136,4 +136,4 @@ deals[0].title.replace('15', '10');
 */
 
 //CODE HERE
-deals[1].desc.replace('March', 'April').trim()
+console.log(deals[1].desc.replace('March', 'April').trim());
