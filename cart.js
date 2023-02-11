@@ -21,22 +21,22 @@
 const cart = [
     {
         name: 'pizza', 
-        price: 9.99
+        price: 9.99,
     }, 
     {
         name: 'pasta', 
-        price: 8.99
+        price: 8.99,
     }, 
     {
         name: 'salad', 
-        price: 7.99
-    }
+        price: 7.99,
+    },
 ]
 
 //CODE HERE
-function cartPrice(price)
+const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
 
-const summedPrice = cart.reduce(cartPrice)
+const summedPrice = cart.reduce(reducer, 0);
 
 
 //////////////////PROBLEM 2////////////////////
@@ -55,7 +55,7 @@ const summedPrice = cart.reduce(cartPrice)
 */
 
 //CODE HERE
-function calcFinalPrice(cartTotal, couponValuem tax) {
+function calcFinalPrice(cartTotal, couponValue, tax) {
     cartTotal * tax
 }
 
