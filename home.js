@@ -119,7 +119,7 @@ const deals = [
 */
 
 //CODE HERE
-const newDeal = deals.replace(/15%/g, "10%")
+deals[0].title.replace('15', '10');
 
 
 /*
@@ -136,4 +136,4 @@ const newDeal = deals.replace(/15%/g, "10%")
 */
 
 //CODE HERE
-const newMonth = deals.replace(/March/g, "April")
+deals[1].desc.replace('March', 'April').trim()
